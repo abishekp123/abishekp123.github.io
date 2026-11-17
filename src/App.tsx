@@ -80,9 +80,9 @@ const jobs = [
     role: "AI Developer Co-op",
     date: "Sep 2026 to present",
     summary:
-      "I work on document retrieval, internal tools, and API performance.",
+      "Building AI workflows that turn complex information into useful tools.",
     bullets: [
-      "Built 6 Python/FastAPI workflows with SQL and REST APIs, reducing manual processing time by 65%.",
+      "Engineered 6 Python/FastAPI workflows with SQL and REST APIs, reducing manual processing time by 65%.",
       "Built a RAG pipeline across 2,500+ documents, achieving 91% retrieval accuracy using vector search.",
       "Optimizing asynchronous APIs with Redis caching and concurrent processing to reduce p95 latency.",
       "Developing React components and FastAPI endpoints to automate data entry and validation.",
@@ -95,8 +95,7 @@ const jobs = [
     division: "Global Banking & Markets",
     role: "Software Engineering Intern",
     date: "May to Aug 2026",
-    summary:
-      "I built audit tools, data pipelines, and AI workflows for Global Banking & Markets.",
+    summary: "Engineering automation for banking and capital markets.",
     bullets: [
       "Built a Node.js audit application processing 30,000+ calls, reducing quarterly audits from 2 weeks to 2 hours.",
       "Developed market data ingestion pipelines with automated validation for downstream pricing and trading systems.",
@@ -111,8 +110,7 @@ const jobs = [
     division: "AI Automation & Data Engineering",
     role: "Data Analyst Co-op",
     date: "Jan to Apr 2026",
-    summary:
-      "I automated reporting and data processing for the Auto Finance team.",
+    summary: "Making financial data cleaner, faster, and more actionable.",
     bullets: [
       "Built Python ETL pipelines using Pandas, NumPy, and Openpyxl to clean multi-source Auto Finance datasets.",
       "Automated reporting workflows, reducing a two-week quarterly audit process to 30 minutes.",
@@ -385,14 +383,14 @@ function App() {
             <div className="hero-bottom">
               <div>
                 <p className="hero-description">
-                  I build backend systems
+                  I build software that makes
                   <br />
-                  <em>and AI-powered tools.</em>
+                  <em>complex things work simply.</em>
                 </p>
                 <p className="hero-subtext">
-                  I’m a computer science student at the University of Waterloo.
+                  Computer science student at the University of Waterloo.
                   <br />
-                  Here’s a look at my projects and co-op experience.
+                  Working across backend systems, applied AI, and the web.
                 </p>
                 <div className="hero-actions">
                   <Button
@@ -409,15 +407,15 @@ function App() {
                 <span className="note-plus">+</span>
                 <span className="small-label">CURRENTLY</span>
                 <p>
-                  AI Developer Co-op
+                  Turning information
                   <br />
-                  at Samsung.
+                  into useful systems.
                 </p>
                 <span className="note-location">Toronto / Waterloo, ON</span>
               </aside>
             </div>
             <div className="hero-footer">
-              <span>SOFTWARE / SYSTEMS / AI</span>
+              <span>ENGINEERING WITH INTENTION</span>
               <a
                 href="https://github.com/abishekp123"
                 target="_blank"
@@ -512,10 +510,10 @@ function App() {
             <div className="section-heading">
               <div>
                 <span className="section-number">02 / EXPERIENCE</span>
-                <h2>Experience</h2>
+                <h2>Built in the real world.</h2>
               </div>
               <span className="section-aside">
-                Co-op roles in software and data.
+                Good teams. Meaningful problems.
               </span>
             </div>
             <Accordion defaultValue={["job-0"]} className="experience-list">
