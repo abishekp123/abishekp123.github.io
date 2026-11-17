@@ -1192,3 +1192,70 @@ h2 {
     max-height: none !important;
   }
 }
+
+/* Brand assets keep their original colours and proportions in either theme. */
+.company-mark {
+  width: 80px;
+  height: 45px;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+}
+.company-mark img {
+  display: block;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+.samsung-mark img {
+  width: 80px;
+  height: 45px;
+}
+.scotia-mark img {
+  width: 32px;
+  height: 36px;
+}
+.job-content {
+  padding-left: 99px;
+}
+.education {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0;
+  margin-top: 24px;
+}
+.waterloo-logo {
+  display: block;
+  width: 240px;
+  height: 108px;
+  object-fit: contain;
+  margin-left: -26px;
+}
+.education > span {
+  color: var(--subtle);
+  font-size: 11px;
+  margin-top: -10px;
+}
+@media (max-width: 520px) {
+  .company-mark {
+    width: 64px;
+    height: 36px;
+  }
+  .samsung-mark img {
+    width: 64px;
+    height: 36px;
+  }
+  .scotia-mark img {
+    width: 28px;
+    height: 32px;
+  }
+  .job-main {
+    flex-basis: calc(100% - 100px);
+  }
+  .job-date {
+    margin-left: 75px;
+  }
+  .job-content {
+    padding-left: 75px;
+  }
+}

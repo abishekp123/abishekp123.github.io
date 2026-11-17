@@ -1,4 +1,4 @@
-# Abishek Prabaharan — Portfolio
+# Abishek Prabaharan | Portfolio
 
 Responsive portfolio built with React, TypeScript, Vite, Tailwind CSS, and shadcn/ui. Fonts (Inter and Instrument Serif) are self-hosted.
 

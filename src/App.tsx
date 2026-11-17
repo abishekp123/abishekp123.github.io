@@ -78,11 +78,11 @@ const jobs = [
   {
     company: "Samsung",
     role: "AI Developer Co-op",
-    date: "Sep 2026 — Present",
+    date: "Sep 2026 to present",
     summary:
-      "Building AI workflows that turn complex information into useful tools.",
+      "I work on document retrieval, internal tools, and API performance.",
     bullets: [
-      "Engineered 6 Python/FastAPI workflows with SQL and REST APIs, reducing manual processing time by 65%.",
+      "Built 6 Python/FastAPI workflows with SQL and REST APIs, reducing manual processing time by 65%.",
       "Built a RAG pipeline across 2,500+ documents, achieving 91% retrieval accuracy using vector search.",
       "Optimizing asynchronous APIs with Redis caching and concurrent processing to reduce p95 latency.",
       "Developing React components and FastAPI endpoints to automate data entry and validation.",
@@ -94,8 +94,9 @@ const jobs = [
     company: "Scotiabank",
     division: "Global Banking & Markets",
     role: "Software Engineering Intern",
-    date: "May — Aug 2026",
-    summary: "Engineering automation for banking and capital markets.",
+    date: "May to Aug 2026",
+    summary:
+      "I built audit tools, data pipelines, and AI workflows for Global Banking & Markets.",
     bullets: [
       "Built a Node.js audit application processing 30,000+ calls, reducing quarterly audits from 2 weeks to 2 hours.",
       "Developed market data ingestion pipelines with automated validation for downstream pricing and trading systems.",
@@ -109,8 +110,9 @@ const jobs = [
     company: "Scotiabank",
     division: "AI Automation & Data Engineering",
     role: "Data Analyst Co-op",
-    date: "Jan — Apr 2026",
-    summary: "Making financial data cleaner, faster, and more actionable.",
+    date: "Jan to Apr 2026",
+    summary:
+      "I automated reporting and data processing for the Auto Finance team.",
     bullets: [
       "Built Python ETL pipelines using Pandas, NumPy, and Openpyxl to clean multi-source Auto Finance datasets.",
       "Automated reporting workflows, reducing a two-week quarterly audit process to 30 minutes.",
@@ -127,14 +129,14 @@ const projects = [
     name: "Patchwork",
     url: "https://github.com/abishekp123/patchwork-ai",
     label: "AI / DEVELOPER TOOLS",
-    description: "From repository to reviewed patch.",
+    description: "AI-assisted code analysis and patch review.",
     detail:
-      "An AI-powered code analysis platform for investigating repositories, generating patches, and verifying changes in isolated environments.",
+      "Patchwork analyzes a codebase, suggests patches, and checks them in isolated Docker containers before review.",
     stack: ["Python", "FastAPI", "React", "Docker"],
     metric: "140",
     metricLabel: "backend & frontend tests",
     bullets: [
-      "FastAPI orchestrates repository investigation and automated patch generation.",
+      "A FastAPI backend handles repository analysis and patch generation.",
       "Isolated Docker verification pipelines enforce network, CPU, and memory restrictions.",
       "A React and TypeScript dashboard supports repository analysis and patch review through REST APIs.",
       "124 backend tests and 16 frontend tests validate patch workflows in CI.",
@@ -144,9 +146,9 @@ const projects = [
     name: "EmberKV",
     url: "https://github.com/abishekp123/emberkv",
     label: "DATABASES / SYSTEMS",
-    description: "A small database. Built to last.",
+    description: "A persistent key-value database in Go.",
     detail:
-      "A persistent key-value database written in Go, with append-only logging, in-memory indexing, and crash recovery.",
+      "EmberKV uses append-only logging and an in-memory index to store data, run fast queries, and recover after a crash.",
     stack: ["Go", "React", "TypeScript", "REST APIs"],
     metric: "8.4×",
     metricLabel: "faster queries across 10,000 keys",
@@ -261,7 +263,7 @@ function Resume() {
           {jobs.map((job) => (
             <section key={job.role}>
               <h4>
-                {job.company} — {job.role}
+                {job.company} · {job.role}
               </h4>
               <p className="muted">{job.date} · Toronto, ON</p>
               <ul>
@@ -375,9 +377,6 @@ function App() {
         </header>
         <main id="main">
           <section className="hero" aria-labelledby="hero-title">
-            <div className="eyebrow">
-              <span className="status-dot" /> WATERLOO CS · CURRENTLY AT SAMSUNG
-            </div>
             <h1 id="hero-title">
               Abishek
               <br />
@@ -386,14 +385,14 @@ function App() {
             <div className="hero-bottom">
               <div>
                 <p className="hero-description">
-                  I build software that makes
+                  I build backend systems
                   <br />
-                  <em>complex things work simply.</em>
+                  <em>and AI-powered tools.</em>
                 </p>
                 <p className="hero-subtext">
-                  Computer science student at the University of Waterloo.
+                  I’m a computer science student at the University of Waterloo.
                   <br />
-                  Working across backend systems, applied AI, and the web.
+                  Here’s a look at my projects and co-op experience.
                 </p>
                 <div className="hero-actions">
                   <Button
@@ -410,15 +409,15 @@ function App() {
                 <span className="note-plus">+</span>
                 <span className="small-label">CURRENTLY</span>
                 <p>
-                  Turning information
+                  AI Developer Co-op
                   <br />
-                  into useful systems.
+                  at Samsung.
                 </p>
                 <span className="note-location">Toronto / Waterloo, ON</span>
               </aside>
             </div>
             <div className="hero-footer">
-              <span>ENGINEERING WITH INTENTION</span>
+              <span>SOFTWARE / SYSTEMS / AI</span>
               <a
                 href="https://github.com/abishekp123"
                 target="_blank"
@@ -439,9 +438,11 @@ function App() {
             <div className="section-heading">
               <div>
                 <span className="section-number">01 / SELECTED WORK</span>
-                <h2>Ideas, made tangible.</h2>
+                <h2>Projects</h2>
               </div>
-              <span className="section-aside">A few things I’ve built.</span>
+              <span className="section-aside">
+                Two projects I’ve been working on.
+              </span>
             </div>
             <div className="project-grid">
               {projects.map((project, index) => (
@@ -511,10 +512,10 @@ function App() {
             <div className="section-heading">
               <div>
                 <span className="section-number">02 / EXPERIENCE</span>
-                <h2>Built in the real world.</h2>
+                <h2>Experience</h2>
               </div>
               <span className="section-aside">
-                Good teams. Meaningful problems.
+                Co-op roles in software and data.
               </span>
             </div>
             <Accordion defaultValue={["job-0"]} className="experience-list">
@@ -524,7 +525,17 @@ function App() {
                     <div
                       className={`company-mark ${i === 0 ? "samsung-mark" : "scotia-mark"}`}
                     >
-                      S
+                      <img
+                        src={
+                          i === 0
+                            ? "/logos/samsung.png"
+                            : "/logos/scotiabank.svg"
+                        }
+                        alt=""
+                        width={i === 0 ? 80 : 32}
+                        height={i === 0 ? 45 : 36}
+                        loading="lazy"
+                      />
                     </div>
                     <div className="job-main">
                       <span className="company-name">
@@ -563,39 +574,42 @@ function App() {
           <section id="about" className="page-section about-section">
             <div>
               <span className="section-number">03 / A LITTLE ABOUT ME</span>
-              <h2>
-                Curiosity, with
-                <br />
-                <em>follow-through.</em>
-              </h2>
+              <h2>About me</h2>
               <p>
                 I’m studying Mathematics & Computer Science at the University of
-                Waterloo. I like getting beneath the surface of a problem — from
-                how a database recovers after a crash to how an AI system finds
-                the right context.
+                Waterloo. Through my co-ops at Samsung and Scotiabank, I’ve
+                worked on AI tools, backend services, and data pipelines.
               </p>
               <p>
-                My work spans backend engineering, data pipelines, and
-                interfaces that make those systems useful.
+                Outside of work, I’ve been building Patchwork and EmberKV.
+                They’ve given me a chance to work through questions about code
+                verification, database performance, and crash recovery
+                firsthand.
               </p>
               <div className="education">
-                <span className="waterloo-mark">W</span>
-                <div>
-                  <strong>University of Waterloo</strong>
-                  <span>Mathematics & Computer Science</span>
-                </div>
+                <img
+                  className="waterloo-logo"
+                  src={
+                    dark ? "/logos/waterloo-dark.png" : "/logos/waterloo.png"
+                  }
+                  alt="University of Waterloo"
+                  width="240"
+                  height="108"
+                  loading="lazy"
+                />
+                <span>Mathematics & Computer Science</span>
               </div>
               <div className="hackathon">
                 <span>↗</span>
                 <p>
                   <strong>CaseHacks finalist, 2026</strong>
                   <br />
-                  ML-driven engagement for retail investing.
+                  Predicting how to reach retail investors with ML.
                 </p>
               </div>
             </div>
             <div className="toolkit">
-              <span className="small-label">TOOLS I REACH FOR</span>
+              <span className="small-label">TECHNICAL SKILLS</span>
               <div>
                 <h3>Languages</h3>
                 <p>
@@ -631,17 +645,13 @@ function App() {
             </div>
           </section>
           <section id="contact" className="contact-section">
-            <span className="section-number">04 / WHAT’S NEXT</span>
-            <h2>
-              Good work starts
-              <br />
-              with a <em>conversation.</em>
-            </h2>
+            <span className="section-number">04 / CONTACT</span>
+            <h2>Let’s get in touch.</h2>
             <div className="contact-bottom">
               <p>
-                Have an interesting problem or an opportunity?
+                Feel free to reach out about a role, a project,
                 <br />
-                I’d love to hear about it.
+                or anything you’d like to know about my work.
               </p>
               <div className="contact-actions">
                 <Button
@@ -682,9 +692,7 @@ function App() {
         </main>
         <footer className="site-footer">
           <span>© {new Date().getFullYear()} Abishek Prabaharan</span>
-          <span className="footer-note">
-            Thoughtfully built. Always learning.
-          </span>
+          <span className="footer-note">Toronto / Waterloo, Ontario</span>
           <div>
             <a
               href="https://github.com/abishekp123"
