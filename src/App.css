@@ -694,7 +694,7 @@ h2 {
   display: flex;
   gap: 8px;
 }
-.contact-actions > :is(a, button):last-of-type {
+.contact-actions > button {
   width: 41px;
   padding: 0;
   background: transparent;
