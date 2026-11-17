@@ -388,7 +388,7 @@ function App() {
                   <em>complex things work simply.</em>
                 </p>
                 <p className="hero-subtext">
-                  Computer science student at the University of Waterloo.
+                  Mathematics and CS student at the University of Waterloo.
                   <br />
                   Working across backend systems, applied AI, and the web.
                 </p>
@@ -407,15 +407,15 @@ function App() {
                 <span className="note-plus">+</span>
                 <span className="small-label">CURRENTLY</span>
                 <p>
-                  Turning information
+                  AI Developer Co-op
                   <br />
-                  into useful systems.
+                  at Samsung.
                 </p>
                 <span className="note-location">Toronto / Waterloo, ON</span>
               </aside>
             </div>
             <div className="hero-footer">
-              <span>ENGINEERING WITH INTENTION</span>
+              <span>BUILDING WITH INTENTION</span>
               <a
                 href="https://github.com/abishekp123"
                 target="_blank"
